@@ -2,7 +2,7 @@
 
 ---
 
-![logreg](logreg.png)
+![logreg](logreg.PNG)
 
 ## [Synopsis](https://en.wikipedia.org/wiki/Logistic_regression)
 Despite the name, *logistic Regression* is a classification algorithm developed to model population growth in the 1830s by Pierre Francois Verhulst. In machine learning, it yields the probability of a binary event happening. It can be extended to multi0label classification by assigning a probability between 0 and 1 to each object where the sum of all object probabilities is 1. Logistic regression itself is not a classifier, but rather models the probability of an output based on the input.
