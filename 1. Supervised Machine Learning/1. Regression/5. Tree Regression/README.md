@@ -5,7 +5,7 @@
 ---
 
 ## [Synopsis](https://en.wikipedia.org/wiki/Decision_tree_learning)
-Decision tree classifiers are an evolution of the classification chart, which have been used throughout history. The decision tree is a model that predicts the value of a target variable based on input variables. Each node in the tree is labeled with an input feature and the arcs of the feature are labeled with possible values (i.e. x2 >= 1, x2 =< 1). Each node splits possible values of each feature until arriving at a position in which (ideally) one class is described by the set of inequalities preceeding the node. A decision the programmer must make is the acceptable mixture of classes within a leaf node. Only allowing pure nodes could expose the model to overfitting. This is an example of a greedy algorithm. 
+Decision tree classifiers are an evolution of the classification chart, which have been used throughout history. The decision tree is a model that predicts the value of a target variable based on input variables. Each node in the tree is labeled with an input feature and the arcs of the feature are labeled with possible values (i.e. x2 >= 1, x2 =< 1). Each node splits possible values of each feature until arriving at a position in which (ideally) one class is described by the set of inequalities preceding the node. A decision the programmer must make is the acceptable mixture of classes within a leaf node. Only allowing pure nodes could expose the model to overfitting. This is an example of a greedy algorithm. 
 
 Two methods to determine the purity of a node are *Gini* and *Entropy*. The Gini impurity is calculated with the equation:
 $
@@ -23,7 +23,7 @@ The decision between Gini and Entropy is essentially preference. Choosing one ov
 
 The Decision Tree works essentially the same as other machine learning models - it must be trained, tested, and reviewed. 
 
-The benifits of a decision tree are:
+The benefits of a decision tree are:
 - Does not require much data pre-processing
 - Intuitive and easy to explain
 
