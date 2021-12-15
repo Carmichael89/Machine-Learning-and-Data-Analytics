@@ -1,7 +1,7 @@
 # Machine-Learning-and-Data-Analytics
 Creator: Christian Carmichael
 
-![Machine Learning](machine Learning.jpg)
+![Machine Learning](machineLearning.jpg)
 
 This repository is a collection of machine learning algorithms documenting the project development of a typical machine learning project. Machine learning can be subdivided into two major categories - supervised and unsupervised. Supervised learning can be further divided into regression and classification methods. Unsupervised learning can be divided into clustering and anomoly detection. 
 
