@@ -5,23 +5,23 @@
 ---
 
 ## [Synopsis](https://en.wikipedia.org/wiki/Support-vector_machine)
-A Support Vector Machine (SVM) is a supervised learning model first developed at AT&T Bell Labroratories by Vladimir Vapnik. SVMs are based on statistical learning frameworks. An SVM algorithm builds a model that can seperate data into binary classifications by drawing a line between the data. SVMs are incredibly powerful and can be used in classification, regression, and outlier detection tasks. Classification SVMs have the following variations:
+A Support Vector Machine (SVM) is a supervised learning model first developed at AT&T Bell Laboratories by Vladimir Vapnik. SVMs are based on statistical learning frameworks. An SVM algorithm builds a model that can separate data into binary classifications by drawing a line between the data. SVMs are incredibly powerful and can be used in classification, regression, and outlier detection tasks. Classification SVMs have the following variations:
 
 ### Linear SVM
-- attempts seperates the data with a straight line
+- attempts separates the data with a straight line
     - Hard-Margin
-        - If the data is linearly seperable, a line can be drawn such that it maximizes the distance between itself and the nearest datapoints on either side. 
+        - If the data is linearly separable, a line can be drawn such that it maximizes the distance between itself and the nearest datapoints on either side. 
         - All instances must be classified on the appropriate side of the line (i.e. $w^Tx - b \geq 1$ produces a label of 1)
     - Soft-Margin
         - Allows a balance between "street" violations where a feature vector falls within the established margins of the hyperplane
         - Less sensitive to outliers which would force the hard margin to compensate for. When using the Sci-kit Learn SVM module, this is the C parameter
 ### Nonlinear SVM
-- allows a nonlinear function to seperate the dataset, called a Kernel
+- allows a nonlinear function to separate the dataset, called a Kernel
     - Polynomial Kernel
-        - seperates the data using a polynomial function
+        - separates the data using a polynomial function
     - Gaussian Radial Basis Function (RBF)
         - $\phi_y(x, l) = exp(-\gamma\|x-l\|^2)$
-        - This is a bell-shaped function and can provide greate flexibility in seperating the data
+        - This is a bell-shaped function and can provide great flexibility in separating the data
 
 
 ### Kernel Trick
@@ -32,8 +32,8 @@ We can implement polynomial functions via a kernel so that we do not actually ha
 - Gaussian RBF: $K(a,b) = exp(-\gamma\|a - b\|^2)$
 - Sigmoid: $K(a,b) = tanh(\gamma a^Tb + r)$
 
-The benifits of an SVM are:
-- works well when there is a clear margin of seperation
+The benefits of an SVM are:
+- works well when there is a clear margin of separation
 - effective in high dimensions
 - relatively memory efficient
 
@@ -42,7 +42,7 @@ The issues with an SVM are:
 - does not perform well when data is noisy
 - no probabilistic explanation for the classification 
 
-SVMs are incredibly powerful, however care needs to be taken when selecting data and training the model. Outliers and noisy data can cause the model to be ineffective. In SVM Regression, instead of the hyper plane forming a basis for classification, it guides the regression line subject to a minimizaton and constraints.
+SVMs are incredibly powerful, however care needs to be taken when selecting data and training the model. Outliers and noisy data can cause the model to be ineffective. In SVM Regression, instead of the hyper plane forming a basis for classification, it guides the regression line subject to a minimization and constraints.
 
 ## Prediction
 A prediction with an SVM is made using the central line of the hyperplane. The hyperplane is create by minimizing the following:
